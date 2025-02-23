@@ -85,6 +85,6 @@ jobs:
         ./appimagetool-x86_64.AppImage --appimage-extract-and-run wine.appdir $GITHUB_WORKSPACE/wine
 
       shell: bash
-    - uses: actions/upload-artifact@v2
+    - uses: actions/upload-artifact@v4
       with:
         path: ${{ github.workspace }}/wine
