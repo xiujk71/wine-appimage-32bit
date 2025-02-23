@@ -56,7 +56,9 @@ jobs:
     - name: Download wine
       run: |
         wget https://dl.winehq.org/wine/source/10.0/wine-10.0.tar.xz
-        tar xf wine-10.0
+        pwd
+        ls
+        tar xf ~/wine-10.0.tar.xz
       shell: bash
     - name: Build wine
       run: |
